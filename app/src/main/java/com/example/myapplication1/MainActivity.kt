@@ -1,10 +1,17 @@
 package com.example.myapplication1
 
+import android.content.ContentValues
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.myapplication1.databinding.ActivityMainBinding
+import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                 type = "image/jpeg"
                 putExtra(Intent.EXTRA_EMAIL, arrayOf("hodovychenko@op.edu.ua"))
                 putExtra(Intent.EXTRA_SUBJECT, "DigiJED Savchuk Kateryna ")
-                putExtra(Intent.EXTRA_TEXT, " ")
+                putExtra(Intent.EXTRA_TEXT, "https://github.com/KatyaSavchuk/MyApplication1")
                 putExtra(Intent.EXTRA_STREAM, imageUri)
             }
             startActivity(emailIntent)
