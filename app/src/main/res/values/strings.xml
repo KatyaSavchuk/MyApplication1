@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyApplication1</string>
+    <string name="createSelfie">Зробити селфі</string>
+    <string name="sendSelfie">Відіслати селфі</string>
+</resources>
